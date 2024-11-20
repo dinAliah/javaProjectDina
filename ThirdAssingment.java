@@ -11,6 +11,7 @@ public class ThirdAssingment{
     }
 
     public void carDisplay(){
+        System.out.println("The Price Value above RM50K:");
         for(int carRow = 0; carRow < carModel.length; carRow++){
             for (int carCol = 0; carCol< carModel.length; carCol++){
 
@@ -18,8 +19,6 @@ public class ThirdAssingment{
 
                     System.out.println(" The Car Model: " + carModel[carRow][carCol] + " : " + "Car Price" + " : "+ price[carRow][carCol]);
 
-                }else{
-                    System.out.println();
                 }
 
             }
@@ -46,7 +45,6 @@ public class ThirdAssingment{
         };
 
         ThirdAssingment ta = new ThirdAssingment (carModel, price);
-        System.out.println("The Price Value above RM500K:");
         ta.carDisplay();
 
     }
